@@ -15,7 +15,7 @@
     "db-seed": "node src/framework/commands/database/seed.js",
     "db-seed-fresh": "npm run db-fresh && npm run db-seed",
     "make": "node src/framework/commands/generator/run.js ",
-    "make:migration": "npx sequelize migration:generate --name=$npm_config_name",
+    "make:migration": "npx sequelize-cli migration:generate --name",
     "migrate": "npx sequelize db:migrate",
     "rollback": "npx sequelize db:migrate:undo"
   },
